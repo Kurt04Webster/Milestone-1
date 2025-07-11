@@ -207,3 +207,22 @@ img[alt="Tim Berners-Lee"] {
 a {
   color: cyan; /* Makes all links cyan for visibility */
 }
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .quiz-section {
+    padding: 10px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
