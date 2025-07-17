@@ -208,3 +208,51 @@ a {
   color: cyan; /* Makes all links cyan for visibility */
 }
 
+/* Base styles for mobile devices */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+/* Tablet view */
+@media (min-width: 601px) {
+  .container {
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    margin-bottom: 0;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
