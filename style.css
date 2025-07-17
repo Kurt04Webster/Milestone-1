@@ -256,3 +256,16 @@ img {
     gap: 20px;
   }
 }
+@media (min-width: 601px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
